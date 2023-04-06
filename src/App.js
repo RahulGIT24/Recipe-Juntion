@@ -1,7 +1,8 @@
 import "./App.css";
 import Search from "./Components/Search";
 import Ribbon from "./Components/Ribbon";
-import RecipeState from "./Context/Recipe/recipeState";
+import RecipeState from "./Context/Recipe/RecipeState";
+import Recipes from "./Components/Recipes";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <RecipeState>
         <Search />
         <Ribbon />
+        <Recipes/>
       </RecipeState>
     </>
   );

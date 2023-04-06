@@ -1,21 +1,26 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import contextValue from '../Context/Recipe/RecipeContext'
 
 function Search() {
 
-  const [dish, setDish] = useState("");
+  const [dish, setDish] = useState("Paneer");
 
   const context = useContext(contextValue)
   const { getRecipe } = context;
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    getRecipe(dish)
+    getRecipe(dish);
   };
 
   const onChange = (e) => {
     setDish(e.target.value);
   };
+
+  //* Using useEffect hook
+  useEffect(()=>{
+    getRecipe(dish)
+  },['dish'])
 
   return (
     <>
