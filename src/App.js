@@ -1,9 +1,11 @@
-import './App.css';
-
+import "./App.css";
+import Search from "./Components/Search";
+import Ribbon from "./Components/Ribbon";
 function App() {
   return (
     <>
-    <h1 className='text-purple text-9xl'>Hello World</h1>
+      <Search/>
+      <Ribbon/>
     </>
   );
 }
