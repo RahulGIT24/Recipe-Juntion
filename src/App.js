@@ -1,11 +1,15 @@
 import "./App.css";
 import Search from "./Components/Search";
 import Ribbon from "./Components/Ribbon";
+import RecipeState from "./Context/Recipe/recipeState";
+
 function App() {
   return (
     <>
-      <Search/>
-      <Ribbon/>
+      <RecipeState>
+        <Search />
+        <Ribbon />
+      </RecipeState>
     </>
   );
 }
