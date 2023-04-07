@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Recipe-Juntion/static/css/main.c3fedf07.css",
+    "main.js": "/Recipe-Juntion/static/js/main.2690d8da.js",
+    "static/js/787.2d036080.chunk.js": "/Recipe-Juntion/static/js/787.2d036080.chunk.js",
+    "static/media/cry.gif": "/Recipe-Juntion/static/media/cry.e99603a90553657d035f.gif",
+    "index.html": "/Recipe-Juntion/index.html",
+    "main.c3fedf07.css.map": "/Recipe-Juntion/static/css/main.c3fedf07.css.map",
+    "main.2690d8da.js.map": "/Recipe-Juntion/static/js/main.2690d8da.js.map",
+    "787.2d036080.chunk.js.map": "/Recipe-Juntion/static/js/787.2d036080.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c3fedf07.css",
+    "static/js/main.2690d8da.js"
+  ]
+}
