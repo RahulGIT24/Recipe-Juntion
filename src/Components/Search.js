@@ -18,9 +18,9 @@ function Search() {
   };
 
   //* Using useEffect hook
-  useEffect(()=>{
+  useEffect(() => {
     getRecipe(dish)
-  },['dish'])
+  }, ['dish'])
 
   return (
     <>
