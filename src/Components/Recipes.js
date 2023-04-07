@@ -12,7 +12,7 @@ function Recipes(props) {
         <>
             {loader && <Loader />}
             {found === true && loader === false ? <NotFound /> : ""}
-            {error ===true && loader===false? <Error />:""}
+            {error === true && loader === false ? <Error /> : ""}
             {loader === false && found === false && error === false ? <div>
                 <h1 className='text-left text-white text-5xl mt-28 mx-6'>
                     <b>Available Recipes</b>

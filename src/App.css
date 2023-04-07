@@ -2,3 +2,26 @@ body {
     background: rgb(0, 0, 0);
     background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, #facc15 100%);
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+    background: #facc15;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #facc15;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #020617;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    border: 1px solid white;
+}

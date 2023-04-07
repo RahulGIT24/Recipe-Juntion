@@ -17,14 +17,23 @@ function RecipeState(props) {
     const [recipe, Setrecipe] = useState([])
 
     //* Fetching api data from config
-    const { api, ID, key } = config
+    const { api, host, key } = config
 
     //* Function to fetch recipe
     const getRecipe = async (dish) => {
         try {
             Setloader(true);
-            let data = await fetch(`${api}${dish}${ID}${key}`)
-            let response = await data.json();
+            const options = {
+                method: 'GET',
+                headers: {
+                    'X-RapidAPI-Key': key,
+                    'X-RapidAPI-Host': host,
+                    mode: 'no-cors'
+                }
+            };
+
+            let data = await fetch(`${api}${dish}`, options)
+            let response = await data.json()
             if (response.hits.length === 0) { Setfound(true); Setloader(false); } else { Setfound(false) }
             Setrecipe(response.hits)
             Setloader(false);
