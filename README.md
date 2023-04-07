@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+[Demo of Recipe Junction](https://rahulgit24.github.io/Recipe-Juntion/)
+
+[API Source](https://rapidapi.com/edamam/api/recipe-search-and-diet/)
+
 ## Available Scripts
 
 In the project directory, you can run:
