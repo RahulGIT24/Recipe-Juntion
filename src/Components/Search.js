@@ -33,6 +33,7 @@ function Search() {
             onChange={onChange}
             className="block p-2.5  z-20 text-sm w-96 border-2 rounded-2xl border-black outline-none"
             placeholder="Enter the name of Dish"
+            value={dish}
             required
           />
           <button
