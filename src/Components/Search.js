@@ -3,7 +3,7 @@ import contextValue from '../Context/Recipe/RecipeContext'
 
 function Search() {
 
-  const [dish, setDish] = useState("Paneer");
+  const [dish, setDish] = useState(localStorage.getItem('dish'));
 
   const context = useContext(contextValue)
   const { getRecipe } = context;
