@@ -7,6 +7,9 @@ function RecipeState(props) {
     //* Managing error state
     const [error, Seterror] = useState(false);
 
+    //* State for dish name
+    const [dishName, setDishName] = useState("")
+
     //* When recipe not found
     const [found, Setfound] = useState(false)
 
@@ -22,6 +25,7 @@ function RecipeState(props) {
     //* Function to fetch recipe
     const getRecipe = async (dish) => {
         try {
+            setDishName(dish)
             Setloader(true);
             const options = {
                 method: 'GET',
@@ -46,7 +50,7 @@ function RecipeState(props) {
 
     return (
         <>
-            <RecipeContext.Provider value={{ getRecipe, recipe, loader, found, error }}>
+            <RecipeContext.Provider value={{ getRecipe, recipe, loader, found, error, dishName }}>
                 {props.children}
             </RecipeContext.Provider>
         </>

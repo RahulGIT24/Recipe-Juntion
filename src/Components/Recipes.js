@@ -7,15 +7,15 @@ import RecipeItem from './RecipeItem';
 
 function Recipes(props) {
     const context = useContext(contextValue)
-    const { recipe, loader, found, error } = context;
+    const { recipe, loader, found, error, dishName } = context;
     return (
         <>
             {loader && <Loader />}
             {found === true && loader === false ? <NotFound /> : ""}
             {error === true && loader === false ? <Error /> : ""}
             {loader === false && found === false && error === false ? <div>
-                <h1 className='text-left text-white text-5xl mt-28 mx-6'>
-                    <b>Available Recipes</b>
+                <h1 className='text-white text-5xl mt-28 mx-6 text-center' >
+                    <b >Available Recipes of {dishName}</b>
                 </h1>
                 <section className="text-gray-600 body-font">
                     <div className="container px-5 py-24 mx-auto">
