@@ -26,7 +26,6 @@ function RecipeState(props) {
     const getRecipe = async (dish) => {
         try {
             setDishName(dish)
-            localStorage.setItem("dish", dish)
             Setloader(true);
             const options = {
                 method: 'GET',

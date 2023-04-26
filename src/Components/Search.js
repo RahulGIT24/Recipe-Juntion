@@ -2,8 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import contextValue from '../Context/Recipe/RecipeContext'
 
 function Search() {
-
-  const [dish, setDish] = useState(localStorage.getItem('dish'));
+  const [dish, setDish] = useState("Paneer");
 
   const context = useContext(contextValue)
   const { getRecipe } = context;
